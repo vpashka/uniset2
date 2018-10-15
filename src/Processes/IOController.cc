@@ -439,7 +439,7 @@ void IOController::logging( uniset::SensorMessage& sm )
 		}
 
 		sm.consumer = dbserverID;
-		TransportMessage tm(std::move(sm.transport_msg()));
+		TransportMessage tm(sm.transport_msg());
 		ui->send( sm.consumer, std::move(tm) );
 		isPingDBServer = true;
 	}
@@ -468,7 +468,7 @@ void IOController::dumpToDB()
 
 			if ( !s->dbignore )
 			{
-				SensorMessage sm( std::move(s->makeSensorMessage()) );
+				SensorMessage sm( s->makeSensorMessage() );
 				logging(sm);
 			}
 		}

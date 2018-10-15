@@ -183,4 +183,9 @@ namespace uniset
 		catch(...) {}
 	}
 	// -------------------------------------------------------------------------
+	ComPort* ModbusRTUSlaveSlot::getComPort()
+	{
+		return port;
+	}
+	// -------------------------------------------------------------------------
 } // end of namespace uniset

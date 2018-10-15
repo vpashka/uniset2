@@ -237,7 +237,7 @@ namespace uniset
 					ai.ci.precision = 0;
 				}
 
-				return std::move(ai);
+				return ai;
 			};
 
 			//! сохранение информации об изменении состояния датчика

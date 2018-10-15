@@ -12,7 +12,7 @@ cache:
 
 branches:
   only:
-    - travis-matrix
+    - travis-compile-matrix
 
 matrix:
   include:
