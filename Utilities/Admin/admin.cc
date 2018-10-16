@@ -563,7 +563,7 @@ static bool commandToAll(const string& section, std::shared_ptr<ObjectRepository
 			}
 		}
 	}
-	catch( ORepFailed )
+	catch( const ORepFailed& ex )
 	{
 		if( !quiet )
 			cerr << "..ORepFailed.." << endl;

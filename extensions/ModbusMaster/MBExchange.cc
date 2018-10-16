@@ -3372,7 +3372,7 @@ namespace uniset
 		{
 			ostringstream s;
 			s << "number of calls is " << poll_count << " (poll time: " << stat_time << " sec)";
-			statInfo = std::move(s.str());
+			statInfo = s.str();
 			mblog9 << myname << "(stat): " << statInfo << endl;
 			ptStatistic.reset();
 			poll_count = 0;

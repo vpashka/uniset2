@@ -178,7 +178,7 @@ namespace uniset
 	{
 		try
 		{
-			terminate();
+			ModbusRTUSlave::terminate();
 		}
 		catch(...) {}
 	}

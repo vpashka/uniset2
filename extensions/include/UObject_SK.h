@@ -8,7 +8,7 @@
  ВСЕ ВАШИ ИЗМЕНЕНИЯ БУДУТ ПОТЕРЯНЫ.
 */ 
 // --------------------------------------------------------------------------
-// generate timestamp: 2018-10-15+03:00
+// generate timestamp: 2018-10-16+03:00
 // -----------------------------------------------------------------------------
 #ifndef UObject_SK_H_
 #define UObject_SK_H_
@@ -159,10 +159,10 @@ class UObject_SK:
 		
 		virtual void callback() noexcept override;
 		virtual void processingMessage( const uniset::VoidMessage* msg ) override;
-		virtual void sysCommand( const uniset::SystemMessage* sm ){};
-		virtual void askSensors( UniversalIO::UIOCommand cmd ){}
-		virtual void sensorInfo( const uniset::SensorMessage* sm ) override{}
-		virtual void timerInfo( const uniset::TimerMessage* tm ) override{}
+		virtual void sysCommand( const uniset::SystemMessage* sm ) override {}
+		virtual void askSensors( UniversalIO::UIOCommand cmd ) {}
+		virtual void sensorInfo( const uniset::SensorMessage* sm ) override {}
+		virtual void timerInfo( const uniset::TimerMessage* tm ) override {}
 		virtual bool activateObject() override;
 		virtual bool deactivateObject() override;
 		virtual std::string getMonitInfo() const { return ""; } /*!< пользовательская информация выводимая в getInfo() */
